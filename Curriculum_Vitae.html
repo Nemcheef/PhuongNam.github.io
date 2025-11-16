@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum vitae (40/60 Layout)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fc;
+        }
+        .section-title {
+            @apply text-xl font-bold border-b-2 pb-1 mb-4;
+        }
+
+        .left-column-bg {
+            background-color: #1e293b; /* Xanh đậm hơn */
+            color: #f1f5f9; /* Text trắng ngà */
+        }
+        .right-column-bg {
+            background-color: #ffffff;
+            color: #1e293b;
+        }
+
+        .icon {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            vertical-align: middle;
+            fill: none;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-5xl mx-auto shadow-2xl rounded-2xl overflow-hidden bg-white">
+        
+        <div class="md:flex">
+            
+            <div class="left-column-bg md:w-2/5 p-6 md:p-10 space-y-8">
+                
+                <div class="flex flex-col items-center text-center">
+                    <img src="https://placehold.co/120x120/94a3b8/ffffff?text=AVATAR" 
+                         alt="Hình đại diện" 
+                         class="w-32 h-32 rounded-full border-4 border-gray-600 shadow-lg mb-4">
+                                        
+                </div>
+
+                <section>
+                    <h2 class="section-title border-gray-600 text-blue-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon inline mr-2 text-yellow-300" viewBox="0 0 24 24" stroke="currentColor"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                        ABOUT ME
+                    </h2>
+                    <div class="text-sm space-y-3">
+                        <p class="font-light">
+                            I am a dedicated person with a passion for expanding in the IT field.
+                            I am passionate about coding and am always looking for opportunities to learn and develop my skills.
+                        </p>
+                        <div class="flex items-center">
+                            <span class="text-xl mr-3 text-blue-300">✉</span>
+                            <span>5101104059@student.hcmue.edu.vn</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-xl mr-3 text-blue-300">✆</span>
+                            <span>(84) 888 490 907</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-xl mr-3 text-blue-300">⌂</span>
+                            <span>Thành Phố Hồ Chí Minh, Việt Nam</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="section-title border-gray-600 text-blue-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon inline mr-2 text-yellow-300" viewBox="0 0 24 24" stroke="currentColor"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                        Kỹ Năng
+                    </h2>
+                    <div class="space-y-3 text-sm">
+                        <div class="font-medium text-gray-300">Professional Skills (HTML, CSS, C++, ...)</div>
+                        <div class="w-full bg-gray-600 rounded-full h-2.5">
+                            <div class="bg-blue-500 h-2.5 rounded-full" style="width: 60%"></div>
+                        </div>
+
+                         <div class="font-medium text-gray-300">Soft Skills ( communication, leadership)</div>
+                        <div class="w-full bg-gray-600 rounded-full h-2.5">
+                            <div class="bg-blue-500 h-2.5 rounded-full" style="width: 70%"></div>
+                        </div>
+
+                        <div class="font-medium text-gray-300">Foreign language ( English )</div>
+                        <div class="w-full bg-gray-600 rounded-full h-2.5">
+                            <div class="bg-blue-500 h-2.5 rounded-full" style="width: 50%"></div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section>
+                    <h2 class="section-title border-gray-600 text-blue-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon inline mr-2 text-yellow-300" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></svg>
+                        Sở Thích & Khác
+                    </h2>
+                    <div class="text-sm space-y-1">
+                        <ul class="list-none p-0 space-y-1">
+                            <li class="flex items-center"><span class="mr-2 text-yellow-300">★</span> Read a book</li>
+                            <li class="flex items-center"><span class="mr-2 text-yellow-300">★</span> Sports</li>
+                            <li class="flex items-center"><span class="mr-2 text-yellow-300">★</span> in-depth exploration of information technology</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="section-title border-gray-600 text-blue-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon inline mr-2 text-yellow-300" viewBox="0 0 24 24" stroke="currentColor"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        REFERENCE persons
+                    </h2>
+                    <div class="text-sm text-gray-300">
+                    <div> Mr. Hien Luong  </div>
+                    <div> Mr. Khien Luong</div>
+
+                    </div>
+                </section> 
+
+            </div>
+
+            <div class="right-column-bg md:w-3/5 p-6 md:p-10 space-y-10">
+
+                <section>
+                    <h1 class="text-3xl font-extrabold text-blue-300">Nguyễn Đoàn Phương Nam</h1>
+                        <p class="text-lg font-medium text-gray-300 mt-1">Developer</p>
+                    <h2 class="section-title border-blue-500 text-blue-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon inline mr-2 text-blue-500" viewBox="0 0 24 24" stroke="currentColor"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h5a2 2 0 0 1 2 2v3"></path><path d="M15 15a4 4 0 1 0 0 8a4 4 0 0 0 0-8z"></path><path d="M17 17h4"></path></svg>
+                       WORK EXPERIENCE
+                    </h2>
+                    <div class="space-y-6">
+                        
+                        <div class="border-l-4 border-blue-500 pl-4 relative">
+                            <span class="absolute -left-2 top-0.5 w-4 h-4 bg-blue-500 rounded-full"></span>
+                            <p class="text-xs text-gray-500 font-semibold mb-1">16/11/2025 - Hiện tại</p>
+                            <h3 class="text-lg font-bold">Sinh Viên năm nhất</h3>
+                            <p class="text-base italic text-gray-600">Trường Đại học Sư Phạm Thành Phố Hồ Chí Minh</p>
+                            <ul class="list-disc list-outside ml-5 mt-2 text-sm space-y-1">
+                                <li>thành tích chưa đạt được nhiều</li>
+                            </ul>  
+                        </div>
+
+                        <div class="border-l-4 border-blue-500 pl-4 relative">
+                            <span class="absolute -left-2 top-0.5 w-4 h-4 bg-blue-500 rounded-full"></span>
+                            <p class="text-xs text-gray-500 font-semibold mb-1">2022-2025/p>
+                            <h3 class="text-lg font-bold">Học Sinh</h3>
+                            <p class="text-base italic text-gray-600">Trường THPT Thống Nhất A, Đồng Nai</Nav></p>
+                            <ul class="list-disc list-outside ml-5 mt-2 text-sm space-y-1">
+                                <li>Lớp trưởng</li>
+                                <li>Giúp đỡ các bạn trong lớp phát triển hơn, tất cả đều đổ tốt nghiệp.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="section-title border-blue-500 text-blue-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon inline mr-2 text-blue-500" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 20V10"></path><path d="M18.5 22.5c-2.3 0-3.5-1.5-3.5-3.5S16.2 16 18.5 16s3.5 1.5 3.5 3.5s-1.2 3.5-3.5 3.5z"></path><path d="M8 7.5V3H16V7.5"></path><path d="M8 7.5h8"></path><path d="M4 10h16"></path><path d="M6 10v4"></path><path d="M18 10v4"></path></svg>
+                        Chứng Chỉ & Học Vấn
+                    </h2>
+                    <div class="space-y-6">
+
+                        <div class="border-l-4 border-yellow-500 pl-4">
+                            <p class="text-xs text-gray-500 font-semibold mb-1">2025</p>
+                            <h3 class="text-lg font-bold text-yellow-600">Tốt nghiệp THPT</h3>
+                            <p class="text-base italic text-gray-600">Ban Giám Hiệu Trường THPT Thống Nhất A</p>
+                            <p class="text-sm mt-1">12/12.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
